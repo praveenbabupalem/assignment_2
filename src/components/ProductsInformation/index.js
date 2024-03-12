@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 import "./index.css";
 
-export default function ProductDetails() {
+export default function ProductsInformation() {
   const [product, setProduct] = useState([]);
   let { id } = useParams();
 

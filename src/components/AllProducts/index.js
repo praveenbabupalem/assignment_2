@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"; 
-import ProductGrid from "../ProductGrid";
+import ProductCard from "../ProductCard";
 import "./index.css";
 
-function Products() {
+function AllProducts() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -27,11 +27,11 @@ function Products() {
 
       <ul className="product-list-items">
         {products.map((each) => (
-          <ProductGrid eachItem={each} key={each.id} />
+          <ProductCard eachItem={each} key={each.id} />
         ))}
       </ul>
     </div>
   );
 }
 
-export default Products;
+export default AllProducts;

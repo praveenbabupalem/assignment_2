@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
-function ProductGrid(props) {
+function ProductCard(props) {
   const { eachItem } = props;
   const { id, title, price, image } = eachItem;
   return (
@@ -17,4 +17,4 @@ function ProductGrid(props) {
   );
 }
 
-export default ProductGrid;
+export default ProductCard;
